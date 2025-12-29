@@ -58,6 +58,23 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "Protein Function Prediction using GO Ontology",
+    description:
+      "Built a multi-label machine learning system to predict protein functions from amino acid sequences. Implemented amino acid composition features, One-vs-Rest Logistic Regression, label frequency filtering, and IA-weighted F1 evaluation across GO subontologies (BP, MF, CC).",
+    tech: [
+      "Python",
+      "Machine Learning",
+      "Bioinformatics",
+      "Multi-label Classification",
+      "GO Ontology",
+      "Sparse Matrices"
+    ],
+    ongoing: true,
+    featured: true,
+    github: "https://github.com/sruthyrb-create/YOUR_REPO_LINK"
+  },
+
+  {
     title: "Crime Data Analysis & Pattern Detection (Major Project)",
     description:
       "Performed large-scale crime data analysis to identify crime patterns, hotspots, and temporal trends. Applied statistical analysis and data visualization techniques to support data-driven insights for crime prevention and policy planning.",
@@ -162,7 +179,7 @@ export default function App() {
           className="text-center max-w-3xl"
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">
-            Sruthy RB
+            Sruthy Rajesh Bindhu
           </h1>
 
           <h2 className="text-xl md:text-2xl text-accent font-medium mb-6">
@@ -211,15 +228,28 @@ export default function App() {
               key={index}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
-              className={`rounded-xl p-6 shadow-lg border ${
+              className={`rounded-xl p-6 shadow-lg border transition-all${
                 project.featured
-                ? "bg-slate-900 border-accent/40"
-                  : "bg-slate-900 border-slate-800"
+                ? "bg-slate-900 border-accent/40 hover:shadow-accent/20"
+                : "bg-slate-900 border-slate-800 hover:border-accent/30"
               }`} 
             >
-              <h4 className="text-2xl font-semibold text-white mb-3">
+              <h4 className="text-2xl font-semibold text-white mb-1">
                 {project.title}
               </h4>
+
+              {project.featured && (
+                <span className="inline-block mb-3 text-xs px-3 py-1 rounded-full bg-accent/20 text-accent">
+                  Featured Project
+                </span>
+              )}
+              {project.ongoing && (
+                <span className="text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400">
+                  Ongoing
+                </span>
+              )}
+
+
 
               <p className="text-gray-300 mb-4">
                 {project.description}
@@ -280,6 +310,44 @@ export default function App() {
           ))}
         </div>
       </section>
+
+          {/* CONTACT SECTION */}
+      <section className="py-24 px-6 text-center border-t border-slate-800">
+        <h3 className="text-4xl font-bold text-white mb-6">
+          Let’s Connect
+        </h3>
+
+        <p className="text-gray-400 mb-8 max-w-xl mx-auto">
+          I’m actively seeking internships and full-time opportunities in Data Science,
+          Machine Learning, and Analytics. Feel free to reach out.
+        </p>
+
+        <div className="flex justify-center gap-6 flex-wrap">
+          <a
+            href="mailto:sruthyrb@umich.edu"
+            className="px-6 py-3 rounded-lg bg-accent text-bgDark font-semibold hover:bg-sky-400 transition"
+          >
+            Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sruthy-rb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-lg border border-accent text-accent hover:bg-accent hover:text-bgDark transition"
+          >
+            LinkedIn
+          </a>
+
+          <a    
+            href="https://github.com/sruthyrb-create"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-lg border border-accent text-accent hover:bg-accent hover:text-bgDark transition"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>  
 
     </div>
   );
