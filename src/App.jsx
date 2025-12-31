@@ -216,7 +216,7 @@ export default function App() {
               href="#contact"
               className="px-6 py-3 rounded-lg bg-accent text-bgDark font-semibold hover:bg-sky-400 transition"
             >
-              Lets Connect
+              Let's Connect
             </a>
           </div>
         </motion.div>
