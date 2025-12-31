@@ -60,7 +60,7 @@ const projects = [
   {
     title: "Protein Function Prediction using GO Ontology",
     description:
-      "Built a multi-label machine learning system to predict protein functions from amino acid sequences. Implemented amino acid composition features, One-vs-Rest Logistic Regression, label frequency filtering, and IA-weighted F1 evaluation across GO subontologies (BP, MF, CC).",
+      "Currently building a multi-label machine learning system to predict protein functions from amino acid sequences. So far implemented amino acid composition features, One-vs-Rest Logistic Regression, label frequency filtering, and IA-weighted F1 evaluation across GO subontologies (BP, MF, CC).",
     tech: [
       "Python",
       "Machine Learning",
@@ -94,7 +94,7 @@ const projects = [
     title: "PostgreSQL COVID-19 Data Analytics",
     description:
       "Designed and implemented a relational database for COVID-19 datasets. Optimized SQL queries and performed analytical reporting to extract insights from large-scale data.",
-    tech: ["PostgreSQL", "SQL", "Data Modeling", "Analytics"],
+    tech: ["PostgreSQL", "SQL", "Data Modeling", "Analytics","Database Management"],
     featured: true,
   },
   {
