@@ -71,7 +71,7 @@ const projects = [
     ],
     ongoing: true,
     featured: true,
-    github: "https://github.com/sruthyrb-create/YOUR_REPO_LINK"
+    github: "https://github.com/sruthyrb-create/protein-function-prediction-go"
   },
 
   {
@@ -212,6 +212,12 @@ export default function App() {
               Resume      
             
             </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-lg bg-accent text-bgDark font-semibold hover:bg-sky-400 transition"
+            >
+              Lets Connect
+            </a>
           </div>
         </motion.div>
       </section>
@@ -312,7 +318,7 @@ export default function App() {
       </section>
 
           {/* CONTACT SECTION */}
-      <section className="py-24 px-6 text-center border-t border-slate-800">
+      <section id="contact" className="py-24 px-6 text-center border-t border-slate-800">
         <h3 className="text-4xl font-bold text-white mb-6">
           Let’s Connect
         </h3>
@@ -323,6 +329,7 @@ export default function App() {
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
+          
           <a
             href="mailto:sruthyrb@umich.edu"
             className="px-6 py-3 rounded-lg bg-accent text-bgDark font-semibold hover:bg-sky-400 transition"
